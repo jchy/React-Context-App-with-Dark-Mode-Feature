@@ -44,11 +44,11 @@ const Login = () => {
     <form onSubmit={handleSubmit}>
       <div>
         <label>
-          email :{" "}
+          Email :{" "}
           <input
             type="email"
             onChange={(e) => setEmail(e.target.value)}
-            placeholder="...Enter Email"
+            placeholder=" Enter Email"
           />
         </label>
       </div>
@@ -60,7 +60,7 @@ const Login = () => {
           <input
             type="password"
             onChange={(e) => setPassword(e.target.value)}
-            placeholder="...Enter password"
+            placeholder=" Enter password"
           />
         </label>
       </div>

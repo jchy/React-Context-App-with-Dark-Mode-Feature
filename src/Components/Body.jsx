@@ -22,7 +22,8 @@ const Body = () => {
             color: currentTheme.color,
             backgroundColor: currentTheme.background,
             display: "flex",
-            border: "1px solid aqua"
+            border: "1px solid aqua",
+            padding: "50px"
           }}
         >
           <div style={{ border: "1px solid aqua", fontSize: "30px" }}>
@@ -269,7 +270,7 @@ const Body = () => {
                 </div>
               </div>
 
-              <div style={{ borderBottom: "1px solid gray" }}>
+              <div>
                 <div>
                   <div style={{ display: "flex" }}>
                     <div style={{ width: "15%" }}>
