@@ -131,7 +131,7 @@ const Body = () => {
                     <p>Active Users</p>
                   </div>
                   <div style={{ width: "30%", marginTop: "30px" }}>
-                    for August 2020▾
+                    for December 2021▾
                   </div>
                 </div>
 
