@@ -41,32 +41,76 @@ const Login = () => {
   }
 
   return (
-    <form onSubmit={handleSubmit}>
+    <form
+      onSubmit={handleSubmit}
+      style={{
+        width: "400px",
+        margin: "auto",
+        background: "black",
+        color: "white",
+        padding: "50px"
+      }}
+    >
       <div>
         <label>
-          Email :{" "}
-          <input
-            type="email"
-            onChange={(e) => setEmail(e.target.value)}
-            placeholder=" Enter Email"
-          />
+          <div>
+            <input
+              type="email"
+              onChange={(e) => setEmail(e.target.value)}
+              placeholder=" Enter Email"
+              style={{
+                border: "1px solid white",
+                borderBottom: "2px solid white",
+                fontSize: "16px",
+                background: "black",
+                width: "300px",
+                padding: "5px",
+                color: "white",
+                borderRadius: "20px",
+                height: "30px",
+                paddingLeft: "20px"
+              }}
+            />
+          </div>
         </label>
       </div>
       <br />
 
       <div>
         <label>
-          Password :{" "}
-          <input
-            type="password"
-            onChange={(e) => setPassword(e.target.value)}
-            placeholder=" Enter password"
-          />
+          <div>
+            <input
+              type="password"
+              onChange={(e) => setPassword(e.target.value)}
+              placeholder=" Enter password"
+              style={{
+                border: "1px solid white",
+                borderBottom: "2px solid white",
+                fontSize: "16px",
+                background: "black",
+                width: "300px",
+                padding: "5px",
+                color: "white",
+                borderRadius: "20px",
+                height: "30px",
+                paddingLeft: "20px"
+              }}
+            />
+          </div>
         </label>
       </div>
       <br />
       <div>
-        <input type="submit" />
+        <input
+          type="submit"
+          style={{
+            height: "40px",
+            width: "150px",
+            borderRadius: "30px",
+            fontSize: "20px"
+          }}
+          value="Sign in"
+        />
       </div>
     </form>
   );
