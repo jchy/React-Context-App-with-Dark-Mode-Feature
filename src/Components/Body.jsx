@@ -72,6 +72,22 @@ const Body = () => {
               >
                 <p>My Dashboard</p>
               </div>
+
+              <div
+                style={{
+                  marginTop: "30px",
+                  width: "250px"
+                }}
+              >
+                {/* <button onClick={toggleTheme}> */}
+                Switch to {theme === "light" ? "dark" : "light"} Mode
+                {/* </button> */}
+                <label className="themeBox">
+                  <input type="checkbox" onChange={toggleTheme} />
+                  <span className="themeSlider"></span>
+                </label>
+              </div>
+
               <div style={{ marginTop: "20px" }}>
                 {isAuth ? (
                   <button
@@ -105,15 +121,6 @@ const Body = () => {
                     SIGN IN
                   </button>
                 )}
-              </div>
-              <div style={{ marginTop: "30px" }}>
-                {/* <button onClick={toggleTheme}> */}
-                Switch to {theme === "light" ? "dark" : "light"} Mode
-                {/* </button> */}
-                <label className="themeBox">
-                  <input type="checkbox" onChange={toggleTheme} />
-                  <span className="themeSlider"></span>
-                </label>
               </div>
             </div>
 
@@ -344,8 +351,8 @@ const Body = () => {
     );
   } else {
     return (
-      <div>
-        <h3>Please login to continue with the site</h3>
+      <div style={{ fontWeight: "500", fontSize: "24px" }}>
+        <p>Please Sign in to explore the site</p>
       </div>
     );
   }
